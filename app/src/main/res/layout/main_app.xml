@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page_seance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/zone1"
+        layout="@layout/zone_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zone1"
+        android:layout_above="@+id/nav_main">
+        <include layout="@layout/block_seance" />
+    </ScrollView>
+
+    <include layout="@layout/nav_barre_all"
+        android:id="@+id/nav_main"/>
+</RelativeLayout>

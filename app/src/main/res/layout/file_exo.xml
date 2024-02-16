@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/zone_nom_seance"
+        layout="@layout/title_exo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/zone_nom_seance"
+        android:layout_above="@+id/nav_add">
+        <include layout="@layout/list_exo_page" />
+
+    </ScrollView>
+    <include layout="@layout/nav_barre_all"
+        android:id="@+id/nav_add"/>
+
+</RelativeLayout>

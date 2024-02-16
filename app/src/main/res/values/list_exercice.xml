@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_exercice">
+        <item>Barre au front</item>
+        <item>Curl Barre droite</item>
+        <item>Curl haltere incline</item>
+        <item>Curl marteau</item>
+        <item>Curl barre droite</item>
+        <item>Curl haltere incline</item>
+        <item>Curl pupitre barre</item>
+        <item>Dips assis machine</item>
+        <item>Dips barres parallèles</item>
+        <item>Extension verticale poulie basse</item>
+        <item>Extension horizontale poulie</item>
+        <item>Extension verticale poulie haute</item>
+        <item>Extension triceps arrière</item>
+        <item>Muscle-up</item>
+        <item>Pull-over barre</item>
+        <item>Pull-over haltère</item>
+        <item>Rowing haltère à un bras</item>
+        <item>Rowing "T-bar"</item>
+        <item>Rowing haltère</item>
+        <item>Rowing barre</item>
+        <item>Shrug barre</item>
+        <item>Soulevé de terre machine</item>
+        <item>Soulevé de terre barre</item>
+        <item>Tirage horizontale poulie</item>
+        <item>Tirage horizontale large</item>
+        <item>Tirage verticale prise serrée</item>
+        <item>Tirage verticale poitrine</item>
+        <item>Tractions</item>
+    </string-array>
+
+    <string-array name="list_repet">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>

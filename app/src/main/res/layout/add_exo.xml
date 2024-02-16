@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+    <LinearLayout
+        android:id="@+id/block_name_seance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border_choice"
+            android:padding="7dp">
+            <ImageButton
+                android:id="@+id/selectPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_photo"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:contentDescription="Selecteur photo" />
+        </LinearLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/name_seance"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="6"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Nom de la séance"
+            android:background="@drawable/border_choice"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/list_exo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/block_name_seance"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_choice"
+        style="@style/SpinnerListExo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_add"
+        android:layout_below="@id/list_exo">
+        <Button
+            android:id="@+id/buttonAddExo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajouter Exercice"
+            android:layout_marginTop="16dp"/>
+        <Spinner
+            android:id="@+id/list_rep"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="130dp"
+            android:background="@drawable/border_choice"
+            style="@style/SpinnerListExo"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonSupSeance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_add"
+        android:layout_marginTop="16dp"
+        android:text="Supprimer une Séance"
+        android:textColor="@color/black"
+        android:background="@drawable/border_title" />
+    <LinearLayout
+        android:id="@+id/linear_list_exo"
+        android:layout_marginTop="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSupSeance">
+        <TextView
+            android:id="@+id/all_exo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Aucune séance sélectionnée !"/>
+    </LinearLayout>
+</RelativeLayout>

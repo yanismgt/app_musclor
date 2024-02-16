@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/zone1"
+        layout="@layout/zone_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/zone1"
+        android:layout_above="@+id/concept"
+        android:orientation="horizontal"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp">
+        <LinearLayout
+            android:id="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/border_choice">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bell_regular"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="Notifications"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/step1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/border_choice">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle_question_regular"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="Aide"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/step3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="bottom"
+            android:layout_below="@id/step2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            android:paddingStart="15dp"
+            android:background="@drawable/border_choice">
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:background="@drawable/file_lines_regular"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginStart="25dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="Conditions générales"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/concept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_add"
+        android:text="@string/conception_id"
+        android:textAlignment="center" />
+
+    <include layout="@layout/nav_barre_all"
+        android:id="@+id/nav_add"/>
+
+</RelativeLayout>

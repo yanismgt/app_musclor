@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LunaMuscle</string>
+    <string name="logo_add">Logo add</string>
+    <string name="logo_muscle">Logo Muscle</string>
+    <string name="logo_para">Logo Paramètre</string>
+    <string name="name_seance">Séance</string>
+    <string name="conception_id">Version 1.1 | Conçu à Lyon</string>
+</resources>
